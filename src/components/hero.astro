@@ -21,13 +21,6 @@ import Section from '../components/seccion.astro';
         
             <footer>
 
-               
-                <a href="" >
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2" 
-                     stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" 
-                     fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-                </a>
-
                 <a href="https://www.instagram.com/kenth.et/" target="_blank" title="intagran de kenneth">
 
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2" 
@@ -49,12 +42,24 @@ import Section from '../components/seccion.astro';
 
             </footer>
 
+            <div class="correo">
+
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2" 
+                stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" 
+                fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" />
+                </svg>
+                <p>eterkenth@gmail.com</p>
+
+
+            </div>
+
+         
 
         </div>
 
      
          <figure>
-                <img src="img-projects.jpg" alt="">
+                <img src="portfolio/img-projects.jpg" alt="">
          </figure>
         
 
@@ -77,6 +82,7 @@ import Section from '../components/seccion.astro';
         font-size: 2rem;
           
     }
+
     p{
         color:#d7baba;
         font-weight: 500;
@@ -98,23 +104,25 @@ import Section from '../components/seccion.astro';
         display: flex;
         gap: 10px;
         margin-top: 15px;
+        padding-bottom: 10px;
       
     }
 
     footer a{
-        
-        
+
         padding: 4px;
         border-radius: 10px;
         background-color: #f8f4f4 ;
         transition: all .3s ease;
         box-shadow: 0px 0px 20px rgb(215, 186, 186,1.5);
+        
 
     }
 
     footer a:hover{
 
         background-color: rgb(194, 195, 197);
+        transform: scale(1.10);
 
     }
 
@@ -123,6 +131,28 @@ import Section from '../components/seccion.astro';
         padding-right: 0px;
         
     }
+
+    .correo{
+
+        padding: 4px;
+        border-radius: 10px;
+        background-color: #f8f4f4 ;
+        transition: all .3s ease;
+        box-shadow: 0px 0px 20px rgb(215, 186, 186,1.5);
+        width:210px;
+        display: flex;
+        align-items: center;
+        gap:5px;
+        height: 30px;
+    }
+
+    .correo p{
+        color:black ;
+    }
+    
+    
+
+
 
    
 
